@@ -220,9 +220,3 @@ if [ "$ssh_key" ];then
 else
 	echo "=>No ssh key found"
 fi
-
-
-
-
-#world writable files after removing proc sys 
-#find / ! -path "*/proc/*" ! -path "/sys/*" -perm -2 -type f -exec ls -la {} 2>/dev/null \;
